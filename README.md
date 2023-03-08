@@ -1,2 +1,2 @@
 # QBM-stuff
-Config files for my GitHub profile.
+This repository contains the Jupyter Notebooks used to generate the figures in my bachelor thesis.
