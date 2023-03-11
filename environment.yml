@@ -1,8 +1,0 @@
-name: QBM
-dependencies:
-  - python=3.9
-  - numpy
-  - notebook
-  - numba
-  - matplotlib
-  - scipy
