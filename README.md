@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# QBM-stuff
 
-=======
 # QBM-code
 ## Description
->>>>>>> 4b3734150e2bdfe59b9e8ea1ac9b615b2e6761dc
 This repository contains the Jupyter Notebooks used to generate the figures in my bachelor thesis.  
 
 "Classical Forward Ising Problem.ipynb" was used to generate the figures in section 1  
