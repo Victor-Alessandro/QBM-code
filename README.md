@@ -1,7 +1,7 @@
 
 # QBM-code
 ## Description
-This repository contains the Jupyter Notebooks used to generate the figures in my bachelor thesis and the final manuscrip '''BSc Thesis - Jasper Pieterse.pdf'''.  
+This repository contains the Jupyter Notebooks used to generate the figures in my bachelor thesis and the final manuscript ```BSc Thesis - Jasper Pieterse.pdf```.  
 
 The main notebooks are the "Quantum-Classical Mapping" notebooks. They contain all the relevant code to generate the figures in the thesis. There are two versions. One with explanation and tests and one without. If you want to understand the code, the first version is recommended. If you just want to re-generate the figures and play around with the code, the second version is recommended.
 
