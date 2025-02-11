@@ -15,13 +15,9 @@ A **Quantum Boltzmann Machine (QBM)** is an extension of the classical Boltzmann
 
 While large-scale QBMs require quantum hardware, small-scale versions can be simulated classically. This notebook provides a Python-based implementation where you can train a QBM using gradient-based optimization, analyze the trained parameters and experiment with different Hamiltonians, including up to three-body interactions:
 
-$$
-    \hat{H} = \sum_{ijl} \sum_{k,k',k''} \sigma^{k,k',k''}_{ijl} \hat{\sigma}^k_i \hat{\sigma}^{k'}_j \hat{\sigma}^{k''}_l
-    + \sum_{ij} \sum_{k,k'} J^{k,k'}_{ij} \hat{\sigma}^k_i \hat{\sigma}^{k'}_j
-    + \sum_{i} \sum_{k} h^k_i \hat{\sigma}^k_i
-$$
+$$\hat{H} = \sum_{ijl} \sum_{k,k',k''} \sigma^{k,k',k''}_{ijl} \hat{\sigma}^k_i \hat{\sigma}^{k'}_j \hat{\sigma}^{k''}_l + \sum_{ij} \sum_{k,k'} J^{k,k'}_{ij} \hat{\sigma}^k_i \hat{\sigma}^{k'}_j + \sum_{i} \sum_{k} h^k_i \hat{\sigma}^k_i$$
 
-where $k = x,y,z$ represents Pauli spin orientations, and \( \hat{\sigma}^k_i \) denotes the Pauli matrix acting on site \( i \).
+where $k = x,y,z$ represents Pauli spin orientations, and $\hat{\sigma}^k_i$ denotes the Pauli matrix acting on site $i$.
 
 For an in-depth explanation of QBM training and results, check out the thesis or the notebook.
 
@@ -36,7 +32,7 @@ To explore what additional information a QBM can extract, we set up a simple sto
 
 ### Example: Spin Flipping Rates
 
-A classical BM can infer that a spin spends 30% of its time in the +1 state and 70% in the -1 state via the parameter \( h_i \). A QBM also captures this through $h^z_i$, but it can _additionally__ infer **how frequently** a spin flips between states using \( h^x_i \). Interestingly, we observed that the relation between flipping rates and $h^x_i$ is **non-linear**.
+A classical BM can infer that a spin spends 30% of its time in the +1 state and 70% in the -1 state via the parameter $h_i$. A QBM also captures this through $h^z_i$, but it can _additionally__ infer **how frequently** a spin flips between states using $h^x_i$. Interestingly, we observed that the relation between flipping rates and $h^x_i$ is **non-linear**.
 
 This relationship between classical properties and quantum parameters is what we refer to as the **"quantum-classical mapping."**
 
